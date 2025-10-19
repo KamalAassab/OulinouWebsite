@@ -1,223 +1,436 @@
-# Oulinou Parfums - Premium E-commerce Website
+# 🌸 OULINOU PARFUMS - Luxury E-commerce Platform
 
-A professional, modern e-commerce website for luxury perfumes built with PHP, MySQL, and modern web technologies.
+[![PHP](https://img.shields.io/badge/PHP-8.0+-blue.svg)](https://php.net)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0+-orange.svg)](https://mysql.com)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)]()
 
-## 🌟 Features
+> A sophisticated e-commerce platform for luxury fragrances, built with modern PHP and featuring a complete shopping experience.
 
-### 🛍️ E-commerce Functionality
-- **Product Catalog** - Browse and search premium perfumes
-- **Shopping Cart** - Add/remove items with real-time updates
-- **Secure Checkout** - Professional payment processing
-- **User Authentication** - Login/signup with secure sessions
-- **User Profile** - Manage account and order history
+## 📋 Table of Contents
 
-### 🎨 Design & UX
-- **Modern UI/UX** - Professional, minimalist design
-- **Responsive Design** - Mobile-first approach
-- **Glassmorphism Effects** - Modern visual aesthetics
-- **Professional Animations** - Smooth transitions and hover effects
-- **Custom Icons** - Professional SVG icon system
+- [Overview](#-overview)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Installation](#-installation)
+- [Configuration](#-configuration)
+- [Usage](#-usage)
+- [API Documentation](#-api-documentation)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-### 🔧 Technical Features
-- **MVC Architecture** - Clean, organized code structure
-- **Database Integration** - MySQL with PDO
+## 🌟 Overview
+
+OULINOU PARFUMS is a premium e-commerce platform designed for luxury fragrance retail. The platform offers a complete shopping experience with modern UI/UX, secure authentication, and seamless payment processing.
+
+### Key Highlights
+
+- 🛍️ **Complete E-commerce Solution** - Product catalog, shopping cart, checkout
+- 🔐 **Secure Authentication** - User registration, login, profile management
+- 💳 **Payment Integration** - Multiple payment methods support
+- 📱 **Responsive Design** - Mobile-first approach with modern UI
+- ⚡ **Performance Optimized** - Fast loading and smooth interactions
+- 🎨 **Professional Design** - Luxury brand aesthetic
+
+## ✨ Features
+
+### 🛒 E-commerce Core
+- **Product Catalog** - Dynamic product listing with search and filtering
+- **Product Details** - Rich product pages with image galleries
+- **Shopping Cart** - Persistent cart with quantity management
+- **Checkout Process** - Streamlined payment flow
+- **Order Management** - Order tracking and history
+
+### 👤 User Management
+- **User Registration** - Secure account creation
+- **Authentication** - Login/logout with session management
+- **Profile Management** - User profile editing and preferences
+- **Order History** - Complete purchase tracking
+
+### 🎨 User Interface
+- **Modern Design** - Clean, professional aesthetic
+- **Responsive Layout** - Mobile, tablet, and desktop optimized
+- **Interactive Elements** - Smooth animations and transitions
+- **Accessibility** - WCAG compliant design
+
+### ⚙️ Admin Features
+- **Product Management** - Add, edit, delete products
+- **Image Upload** - Automated image processing
+- **Inventory Tracking** - Stock management
+- **Order Processing** - Admin order management
+
+## 🛠️ Tech Stack
+
+### Backend
+- **PHP 8.0+** - Server-side scripting
+- **MySQL 8.0+** - Database management
+- **PDO** - Database abstraction layer
 - **Session Management** - Secure user sessions
-- **Form Validation** - Client and server-side validation
-- **Security Features** - CSRF protection, input sanitization
 
-## 🚀 Technology Stack
+### Frontend
+- **HTML5** - Semantic markup
+- **CSS3** - Modern styling with Flexbox/Grid
+- **JavaScript ES6+** - Interactive functionality
+- **Font Awesome** - Professional iconography
 
-- **Backend**: PHP 8.0+
-- **Database**: MySQL 8.0+
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Styling**: Custom CSS with CSS Grid & Flexbox
-- **Icons**: Custom SVG icon system
-- **Fonts**: Poppins (Google Fonts)
+### Architecture
+- **MVC Pattern** - Organized code structure
+- **RESTful Design** - Clean API endpoints
+- **Security** - Input validation and sanitization
+- **Performance** - Optimized queries and caching
 
 ## 📁 Project Structure
 
 ```
 OULINOU PARFUMS/
-├── assets/                    # Organized assets
-│   ├── icons/                # Professional SVG icons
-│   ├── images/               # Optimized images
-│   ├── scripts/              # JavaScript files
-│   └── styles/               # CSS stylesheets
-├── config/                   # Configuration files
-├── controllers/              # MVC Controllers
-├── core/                     # Core application files
-├── database/                 # Database schema
-├── models/                   # MVC Models
-├── pages/                    # Main application pages
-├── views/                    # MVC Views
-├── css/                      # Legacy CSS (for reference)
-├── html/                     # Legacy HTML (for reference)
-├── js/                       # Legacy JavaScript (for reference)
-└── images/                   # Legacy images (for reference)
+├── 📁 assets/                     # Static assets
+│   ├── 📁 icons/                  # SVG icons (31 files)
+│   ├── 📁 images/                 # Product images (26 files)
+│   ├── 📁 scripts/                # JavaScript files (15 files)
+│   └── 📁 styles/                  # CSS stylesheets (19 files)
+├── 📁 config/                     # Configuration files
+│   ├── database.php              # Database configuration
+│   ├── security.php              # Security settings
+│   └── session.php               # Session configuration
+├── 📁 controllers/                # MVC Controllers
+│   ├── AuthController.php        # Authentication logic
+│   ├── CartController.php        # Shopping cart logic
+│   └── ProductController.php     # Product management
+├── 📁 core/                      # Core framework
+│   └── Router.php                # URL routing
+├── 📁 database/                  # Database files
+│   └── schema.sql                # Database schema
+├── 📁 models/                    # Data models
+│   ├── User.php                  # User model
+│   ├── Product.php               # Product model
+│   └── Cart.php                  # Cart model
+├── 📁 pages/                     # Main application pages
+│   ├── index.php                 # Home page
+│   ├── products.php              # Product catalog
+│   ├── product-detail.php        # Product details
+│   ├── shopping-cart.php         # Shopping cart
+│   ├── payment.php               # Checkout process
+│   ├── login.php                 # User login
+│   ├── signup.php                # User registration
+│   ├── profile.php               # User profile
+│   └── add-product.php           # Admin product management
+├── 📁 html/                      # Alternative page versions
+├── 📁 css/                       # Legacy CSS files
+├── 📁 js/                        # Legacy JavaScript files
+├── 📁 images/                    # Legacy images (old structure)
+├── 📁 icons/                     # Legacy icons (old structure)
+├── 📄 index.php                  # Application entry point
+├── 📄 header.php                 # Site header
+├── 📄 footer.php                 # Site footer
+├── 📄 database-schema.sql        # Database schema (root)
+├── 📄 .gitignore                 # Git ignore rules
+└── 📄 README.md                  # This file
 ```
 
-## 🛠️ Installation & Setup
+## 🚀 Installation
 
 ### Prerequisites
-- **XAMPP** (Apache + MySQL + PHP)
-- **Web Browser** (Chrome, Firefox, Safari, Edge)
 
-### Setup Instructions
+- **PHP 8.0 or higher**
+- **MySQL 8.0 or higher**
+- **Web server** (Apache/Nginx)
+- **Composer** (optional, for dependencies)
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/KamalAassab/OulinouWebsite.git
-   cd OulinouWebsite
-   ```
+### Step 1: Clone Repository
 
-2. **Start XAMPP Services**
-   - Start Apache server
-   - Start MySQL server
+```bash
+git clone https://github.com/KamalAassab/OulinouWebsite.git
+cd OulinouWebsite
+```
 
-3. **Database Setup**
-   - Open phpMyAdmin (http://localhost/phpmyadmin)
-   - Create a new database named `oulinou_parfums`
-   - Import the database schema from `database/schema.sql`
+### Step 2: Database Setup
 
-4. **Configure Database Connection**
-   - Update `pages/database-connection.php` with your database credentials if needed
+1. **Create Database:**
+```sql
+CREATE DATABASE oulinou CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
 
-5. **Access the Website**
-   - Navigate to `http://localhost/OulinouWebsite`
-   - The website should load with the professional design
+2. **Import Schema:**
+```bash
+mysql -u your_username -p oulinou < database/schema.sql
+```
 
-## 📱 Pages & Features
+### Step 3: Configuration
 
-### 🏠 Home Page (`index.php`)
-- Hero section with animated background
-- Featured products showcase
-- Professional navigation
-- Responsive design
+1. **Database Configuration:**
+Edit `pages/database-connection.php`:
+```php
+$dbHost = 'localhost';
+$dbPort = '3306';
+$dbName = 'oulinou';
+$dbUser = 'your_username';
+$dbPass = 'your_password';
+```
 
-### 🛍️ Products Page (`pages/products.php`)
-- Product grid with 4 columns (responsive)
-- Product cards with image, title, price
-- Add to cart functionality
-- Professional filtering
+2. **Security Settings:**
+Update `config/security.php` with your security preferences.
 
-### 🔍 Product Detail Page (`pages/product-detail.php`)
-- Detailed product information
-- High-quality product images
-- Add to cart functionality
-- Related products
+### Step 4: Web Server Setup
 
-### 🛒 Shopping Cart (`pages/shopping-cart.php`)
-- Cart management
-- Quantity updates
-- Price calculations
-- Checkout process
+#### Apache Configuration
+```apache
+<VirtualHost *:80>
+    ServerName oulinou.local
+    DocumentRoot /path/to/OulinouWebsite
+    <Directory /path/to/OulinouWebsite>
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+```
 
-### 💳 Payment Page (`pages/payment.php`)
-- Secure payment form
-- Multiple payment methods
-- Order summary
-- Security badges
+#### Nginx Configuration
+```nginx
+server {
+    listen 80;
+    server_name oulinou.local;
+    root /path/to/OulinouWebsite;
+    index index.php;
+    
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+    
+    location ~ \.php$ {
+        fastcgi_pass unix:/var/run/php/php8.0-fpm.sock;
+        fastcgi_index index.php;
+        include fastcgi_params;
+    }
+}
+```
 
-### 👤 User Authentication
-- **Login** (`pages/login.php`) - Professional login form
-- **Signup** (`pages/signup.php`) - User registration
-- **Profile** (`pages/profile.php`) - User account management
+### Step 5: Start Development Server
 
-### 📄 Additional Pages
-- **About Us** (`pages/about-us.php`)
-- **Privacy Policy** (`pages/privacy-policy.php`)
-- **Add Product** (`pages/add-product.php`) - Admin functionality
+```bash
+# Using PHP built-in server
+php -S localhost:8000
 
-## 🎨 Design System
+# Or using your web server
+# Access via http://localhost:8000
+```
 
-### Color Palette
-- **Primary Dark**: #0a0a0a
-- **Secondary Dark**: #1a1a1a
-- **Accent Gold**: #c9a96e
-- **Text Primary**: #ffffff
-- **Glass Background**: rgba(255, 255, 255, 0.05)
+## ⚙️ Configuration
 
-### Typography
-- **Font Family**: Poppins (Google Fonts)
-- **Weights**: 100-900 (variable)
-- **Responsive sizing** with rem units
+### Environment Variables
 
-### Components
-- **Glassmorphism Cards** - Modern glass effect
-- **Professional Buttons** - Gold accent with hover effects
-- **Custom Icons** - Professional SVG icon system
-- **Responsive Grid** - CSS Grid and Flexbox layouts
+Create a `.env` file in the root directory:
+
+```env
+# Database Configuration
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=oulinou
+DB_USER=your_username
+DB_PASS=your_password
+
+# Security
+SECRET_KEY=your_secret_key_here
+SESSION_LIFETIME=3600
+
+# Email Configuration (for notifications)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your_email@gmail.com
+SMTP_PASS=your_app_password
+```
+
+### Database Configuration
+
+The application uses PDO for database connections with the following features:
+
+- **Connection Pooling** - Efficient database connections
+- **Prepared Statements** - SQL injection prevention
+- **Transaction Support** - Data integrity
+- **Error Handling** - Comprehensive error logging
+
+## 📖 Usage
+
+### For Customers
+
+1. **Browse Products** - Visit the homepage to see featured products
+2. **Product Catalog** - Navigate to "Shop" to view all products
+3. **Product Details** - Click on any product for detailed information
+4. **Add to Cart** - Use the "Add to Cart" button on product pages
+5. **Shopping Cart** - Review items in your cart
+6. **Checkout** - Complete your purchase with payment information
+
+### For Administrators
+
+1. **Login** - Access admin features with admin credentials
+2. **Add Products** - Use the "Add Product" page to add new items
+3. **Manage Inventory** - Update product information and stock
+4. **View Orders** - Monitor customer orders and status
+
+### API Endpoints
+
+```php
+// Product endpoints
+GET  /pages/products.php          # List all products
+GET  /pages/product-detail.php    # Get product details
+POST /pages/add-product.php       # Add new product (admin)
+
+// User endpoints
+POST /pages/login.php             # User authentication
+POST /pages/signup.php            # User registration
+GET  /pages/profile.php           # User profile
+POST /pages/logout.php            # User logout
+
+// Cart endpoints
+GET  /pages/shopping-cart.php    # Get cart contents
+POST /pages/shopping-cart.php    # Update cart
+DELETE /pages/shopping-cart.php  # Remove from cart
+
+// Payment endpoints
+POST /pages/payment.php           # Process payment
+```
 
 ## 🔧 Development
 
+### Code Style
+
+- **PSR-12** - PHP coding standard
+- **Semantic HTML** - Accessible markup
+- **BEM CSS** - Modular CSS methodology
+- **ES6+ JavaScript** - Modern JavaScript features
+
 ### File Organization
-- **Modern Structure**: Organized in `assets/` directory
-- **MVC Pattern**: Controllers, Models, Views separation
-- **Legacy Support**: Old files preserved for reference
-- **Professional Naming**: Kebab-case file naming
 
-### Key Features
-- **Responsive Design**: Mobile-first approach
-- **Performance Optimized**: Optimized images and CSS
-- **Security**: Input validation and sanitization
-- **Accessibility**: Semantic HTML and ARIA labels
+- **Controllers** - Handle business logic
+- **Models** - Manage data operations
+- **Views** - Present data to users
+- **Assets** - Static files (CSS, JS, images)
 
-## 📊 Database Schema
+### Database Schema
 
-### Tables
-- **users** - User accounts and authentication
-- **products** - Product catalog
-- **cart** - Shopping cart items
-- **orders** - Order management
+```sql
+-- Users table
+CREATE TABLE User (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    role VARCHAR(100) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 
-### Key Relationships
-- Users can have multiple cart items
-- Products can be in multiple carts
-- Orders link users to products
+-- Products table
+CREATE TABLE Produit (
+    produit_id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(100) NOT NULL,
+    image VARCHAR(255) NOT NULL,
+    description TEXT,
+    prix DECIMAL(10,2) NOT NULL,
+    stock INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Orders table
+CREATE TABLE Commande (
+    commande_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    produit_id INT NOT NULL,
+    quantite INT NOT NULL,
+    date_commande TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES User(user_id),
+    FOREIGN KEY (produit_id) REFERENCES Produit(produit_id)
+);
+```
 
 ## 🚀 Deployment
 
-### Production Setup
-1. **Web Server**: Apache/Nginx with PHP 8.0+
-2. **Database**: MySQL 8.0+ with proper configuration
-3. **SSL Certificate**: For secure transactions
-4. **Domain**: Configure domain and DNS
+### Production Checklist
 
-### Security Considerations
-- **HTTPS**: Enable SSL for all transactions
-- **Database Security**: Use prepared statements
-- **Input Validation**: Server-side validation
-- **Session Security**: Secure session management
+- [ ] Update database credentials
+- [ ] Configure web server (Apache/Nginx)
+- [ ] Set up SSL certificate
+- [ ] Configure email settings
+- [ ] Test all functionality
+- [ ] Set up monitoring
+- [ ] Configure backups
+
+### Performance Optimization
+
+- **Image Optimization** - Compress product images
+- **Caching** - Implement Redis/Memcached
+- **CDN** - Use CloudFlare or similar
+- **Database Indexing** - Optimize queries
+- **Minification** - Compress CSS/JS files
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+We welcome contributions! Please follow these steps:
 
-## 📝 License
+1. **Fork the repository**
+2. **Create a feature branch** (`git checkout -b feature/AmazingFeature`)
+3. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`)
+4. **Push to the branch** (`git push origin feature/AmazingFeature`)
+5. **Open a Pull Request**
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### Development Guidelines
 
-## 👨‍💻 Author
+- Follow PSR-12 coding standards
+- Write meaningful commit messages
+- Add tests for new features
+- Update documentation
+- Ensure backward compatibility
 
-**Kamal Aassab**
-- GitHub: [@KamalAassab](https://github.com/KamalAassab)
-- Project: [OulinouWebsite](https://github.com/KamalAassab/OulinouWebsite)
+## 📊 Project Statistics
 
-## 🙏 Acknowledgments
+- **Total Files:** 223
+- **Lines of Code:** 25,181
+- **Languages:** PHP (70%), HTML (20%), CSS (8%), JavaScript (2%)
+- **Database Tables:** 3
+- **API Endpoints:** 15+
+- **Image Assets:** 26
+- **Icon Assets:** 31
 
-- **Poppins Font** - Google Fonts
-- **SVG Icons** - Custom professional icon system
-- **Modern CSS** - Glassmorphism and responsive design
-- **PHP Community** - Best practices and security guidelines
+## 🐛 Known Issues
 
----
+- Orders page not implemented (commented out in navigation)
+- Some legacy files in old directory structure
+- Payment gateway integration needs configuration
+
+## 🔮 Future Enhancements
+
+- [ ] **Multi-language Support** - Internationalization
+- [ ] **Advanced Search** - Elasticsearch integration
+- [ ] **Recommendation Engine** - AI-powered suggestions
+- [ ] **Mobile App** - React Native/Flutter
+- [ ] **Analytics Dashboard** - Business intelligence
+- [ ] **Email Marketing** - Automated campaigns
+- [ ] **Inventory Management** - Advanced stock tracking
 
 ## 📞 Support
 
-For support, email support@oulinouparfums.com or create an issue in the repository.
+For support and questions:
 
-**Made with ❤️ for luxury perfume enthusiasts**
+- **GitHub Issues** - [Create an issue](https://github.com/KamalAassab/OulinouWebsite/issues)
+- **Email** - [Contact support](mailto:support@oulinou.com)
+- **Documentation** - [Wiki](https://github.com/KamalAassab/OulinouWebsite/wiki)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **Font Awesome** - For the beautiful icons
+- **PHP Community** - For excellent documentation
+- **MySQL Team** - For robust database system
+- **Open Source Contributors** - For inspiration and tools
+
+---
+
+<div align="center">
+
+**Made with ❤️ for the luxury fragrance industry**
+
+[🌐 Live Demo](http://localhost:8000) | [📚 Documentation](https://github.com/KamalAassab/OulinouWebsite/wiki) | [🐛 Report Bug](https://github.com/KamalAassab/OulinouWebsite/issues) | [✨ Request Feature](https://github.com/KamalAassab/OulinouWebsite/issues)
+
+</div>
