@@ -1,0 +1,161 @@
+/* Professional Payment Page with Clarity City Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; 
+}
+
+#navbar {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    overflow: hidden; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(87, 117, 87, 0.527);
+}
+a {
+    color: white;
+    text-decoration: none;
+   
+}
+i {
+    color: white;
+    text-decoration: none;
+}
+ul {
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly; 
+    padding: 0; 
+    margin: 0; 
+}
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+.payment-container {
+    max-width: 600px; 
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, rgba(87, 117, 87, 0.527), #ffffff);
+}
+.payment-container h1 {
+    text-align: center;
+    color: rgba(87, 117, 87, 0.527);
+    margin-bottom: 20px;
+}
+.payment-form h2 {
+    color: black;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus {
+    border-color: #5c9b86;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 95, 115, 0.5);
+}
+
+/* Date Selector */
+.date-selector select {
+    width: calc(50% - 4px); /* Ajuste pour éviter le débordement */
+    margin-right: 4%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.pay-legend {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: black; 
+    text-align: center; 
+    padding: 0 10px; 
+}
+
+.pay-btn {
+    background-color: rgba(87, 117, 87, 0.527);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+  
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button{text-align: center;}
+.pay-btn:hover {
+    background-color: #555;
+  }
+.pay-btn:active {
+    background-color: #070e0ca2;
+}
+.credit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.credit img {
+    width: 40px;
+    height: auto;
+    margin: 5px;
+}
+input::placeholder {
+    font-weight: bold;
+    opacity: 20%;
+}
+.expiration {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 10px; 
+  }
+  .expiration label {
+    margin-right: 10px; 
+  }
+  .date-selector {
+    display: flex; 
+  }
+  .date-selector select {
+    margin-right: 5px; 
+  }

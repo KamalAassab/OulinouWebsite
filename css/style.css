@@ -1,0 +1,81 @@
+/* Professional Global Styles with Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global Poppins Font Application */
+* {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+body, html {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.user-info {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 16px; 
+    max-width: 400px; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 16px; 
+    color: #333;
+}
+
+.user-info p {
+    margin: 8px 0; 
+    line-height: 1.6;
+}
+
+.user-info p:first-child {
+    font-weight: bold; 
+    color: #0056b3; 
+}
+
+.user-info p:last-child {
+    font-style: italic; 
+    color: #666; 
+}
+.but {
+    display: block;
+    width: 200px; 
+    margin: 20px auto;
+    padding: 12px;
+    background-color:rgba(87, 117, 87, 0.527) ; 
+    color: #fff; /* Couleur du texte */
+    font-size: 16px; /* Taille de la police */
+    font-weight: bold; /* Texte en gras */
+    text-transform: uppercase; /* Texte en majuscules */
+    text-align: center; /* Centrage du texte */
+    border: none; /* Suppression des bordures */
+    border-radius: 8px; 
+    cursor: pointer; /* Curseur interactif */
+    transition: background-color 0.3s ease; /* Animation fluide pour les changements de couleur */
+}
+
+.but:hover {
+    background-color:rgba(35, 43, 35, 0.527); 
+}
+.remove-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    color: #fff; /* Couleur du texte */
+    background-color:rgba(12, 19, 12, 0.527); /* Couleur de fond (rouge) */
+    border: none; /* Suppression des bordures */
+    border-radius: 6px; /* Coins arrondis */
+    cursor: pointer; /* Curseur interactif */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animation fluide */
+}
+
+.remove-btn:hover {
+    background-color: #cc0000; /* Couleur plus foncée au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille */
+}
+
+.remove-btn:active {
+    background-color: #a30000; /* Couleur encore plus foncée quand on clique */
+    transform: scale(0.95); /* Réduction légère pour l'effet de clic */
+}

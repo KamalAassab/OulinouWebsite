@@ -1,0 +1,296 @@
+/* Professional Icon System - Oulinou Parfums */
+/* Modern, clean, and professional SVG icons */
+
+/* Base icon styles */
+.professional-icon {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    fill: currentColor;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+.professional-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Navigation Icons */
+.icon-home {
+    width: 1.2em;
+    height: 1.2em;
+    fill: currentColor;
+}
+
+.icon-shop {
+    width: 1.2em;
+    height: 1.2em;
+    fill: currentColor;
+}
+
+.icon-cart {
+    width: 1.2em;
+    height: 1.2em;
+    fill: currentColor;
+}
+
+.icon-user {
+    width: 1.2em;
+    height: 1.2em;
+    fill: currentColor;
+}
+
+.icon-about {
+    width: 1.2em;
+    height: 1.2em;
+    fill: currentColor;
+}
+
+/* User Menu Icons */
+.icon-profile {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.icon-orders {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.icon-logout {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.icon-signin {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.icon-signup {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+/* Product Icons */
+.icon-star {
+    width: 1em;
+    height: 1em;
+    fill: #c9a96e;
+}
+
+
+.icon-shopping-bag {
+    width: 1.2em;
+    height: 1.2em;
+    fill: currentColor;
+}
+
+.icon-plus {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.icon-minus {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.icon-trash {
+    width: 1em;
+    height: 1em;
+    fill: #e74c3c;
+}
+
+/* Payment Icons */
+.icon-credit-card {
+    width: 1.2em;
+    height: 1.2em;
+    fill: currentColor;
+}
+
+.icon-shield {
+    width: 1.2em;
+    height: 1.2em;
+    fill: #27ae60;
+}
+
+.icon-lock {
+    width: 1.2em;
+    height: 1.2em;
+    fill: #27ae60;
+}
+
+.icon-truck {
+    width: 1.2em;
+    height: 1.2em;
+    fill: currentColor;
+}
+
+.icon-receipt {
+    width: 1.2em;
+    height: 1.2em;
+    fill: currentColor;
+}
+
+/* Form Icons */
+.icon-exclamation {
+    width: 1em;
+    height: 1em;
+    fill: #e74c3c;
+}
+
+.icon-check {
+    width: 1em;
+    height: 1em;
+    fill: #27ae60;
+}
+
+.icon-spinner {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Profile Icons */
+.icon-camera {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.icon-chart {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.icon-gear {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+/* Breadcrumb Icons */
+.icon-chevron-right {
+    width: 0.8em;
+    height: 0.8em;
+    fill: currentColor;
+}
+
+/* Dropdown Icons */
+.icon-chevron-down {
+    width: 0.8em;
+    height: 0.8em;
+    fill: currentColor;
+    transition: transform 0.3s ease;
+}
+
+.icon-chevron-down.rotated {
+    transform: rotate(180deg);
+}
+
+/* Mobile Menu Icon */
+.icon-menu {
+    width: 1.5em;
+    height: 1.5em;
+    fill: currentColor;
+}
+
+/* Product Detail Icons */
+.icon-leaf {
+    width: 1em;
+    height: 1em;
+    fill: #27ae60;
+}
+
+.icon-clock {
+    width: 1em;
+    height: 1em;
+    fill: #c9a96e;
+}
+
+.icon-gem {
+    width: 1em;
+    height: 1em;
+    fill: #c9a96e;
+}
+
+/* Card Type Icons */
+.icon-visa {
+    width: 2em;
+    height: 1.2em;
+    fill: #1a1f71;
+}
+
+.icon-mastercard {
+    width: 2em;
+    height: 1.2em;
+    fill: #eb001b;
+}
+
+.icon-amex {
+    width: 2em;
+    height: 1.2em;
+    fill: #006fcf;
+}
+
+.icon-paypal {
+    width: 2em;
+    height: 1.2em;
+    fill: #0070ba;
+}
+
+/* Question Mark Icon */
+.icon-question {
+    width: 1em;
+    height: 1em;
+    fill: #95a5a6;
+    cursor: help;
+}
+
+/* Arrow Icons */
+.icon-arrow-right {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+/* Notification Icons */
+.icon-success {
+    width: 1em;
+    height: 1em;
+    fill: #27ae60;
+}
+
+.icon-error {
+    width: 1em;
+    height: 1em;
+    fill: #e74c3c;
+}
+
+.icon-warning {
+    width: 1em;
+    height: 1em;
+    fill: #f39c12;
+}
+
+.icon-info {
+    width: 1em;
+    height: 1em;
+    fill: #3498db;
+}

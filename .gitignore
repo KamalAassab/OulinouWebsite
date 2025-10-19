@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Environment files
+.env
+.env.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Test files (keeping the analysis file)
+test_all_buttons.html
+unused_files_analysis.txt
+BUTTON_TEST_SUMMARY.md
+
+# Cache
+*.cache
+.cache/
+
+# Build files
+dist/
+build/

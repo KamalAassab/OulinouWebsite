@@ -1,0 +1,128 @@
+/* Professional SVG Icons System */
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Ensure icon wrapper is visible */
+.icon-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Fallback for Font Awesome icons that haven't been replaced */
+i[class*="fa-"] {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Ensure icons are always visible during loading */
+.icon-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Loading state for icons */
+.icon-loading {
+    opacity: 0.5;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+.icon-sm {
+    width: 0.875rem;
+    height: 0.875rem;
+}
+
+.icon-lg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.icon-xl {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Icon animations */
+.icon-spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Icon hover effects */
+.icon-hover:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+/* Specific icon styles */
+.icon-home,
+.icon-shop,
+.icon-store,
+.icon-perfume,
+.icon-user,
+.icon-cart,
+.icon-basket,
+.icon-info,
+.icon-login,
+.icon-logout,
+.icon-user-plus,
+.icon-box,
+.icon-star,
+.icon-leaf,
+.icon-clock,
+.icon-gem,
+.icon-plus,
+.icon-minus,
+.icon-heart,
+.icon-trash,
+.icon-check,
+.icon-spinner,
+.icon-eye,
+.icon-play,
+.icon-arrow-right,
+.icon-credit-card,
+.icon-times,
+.icon-bars,
+.icon-chevron-down,
+.icon-chevron-right,
+.icon-store,
+.icon-basket {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}

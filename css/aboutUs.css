@@ -1,0 +1,203 @@
+/* Professional About Us Page - Matching Home Page Style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Professional Color Palette */
+:root {
+    --primary-dark: #0a0a0a;
+    --secondary-dark: #1a1a1a;
+    --accent-gold: #c9a96e;
+    --accent-gold-light: #d4af37;
+    --accent-gold-dark: #b8941f;
+    --text-primary: #ffffff;
+    --text-secondary: #e5e5e5;
+    --text-muted: #b3b3b3;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.3);
+    --shadow-medium: 0 16px 48px rgba(0, 0, 0, 0.4);
+    --shadow-strong: 0 24px 64px rgba(0, 0, 0, 0.5);
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    overflow-x: hidden;
+    background: 
+        radial-gradient(ellipse at top left, rgba(201, 169, 110, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at bottom right, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+        linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Professional About Section */
+.about {
+    margin: 4rem auto;
+    max-width: 1000px;
+    padding: 4rem 2rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 25px;
+    box-shadow: var(--shadow-strong);
+    position: relative;
+    z-index: 1;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(201, 169, 110, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+    border-radius: 25px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.about h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-gold-light);
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.about h2::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4rem;
+    height: 3px;
+    background: linear-gradient(90deg, transparent 0%, var(--accent-gold) 50%, transparent 100%);
+    border-radius: 2px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.about p:first-of-type {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 2.5rem;
+}
+
+.about p:last-of-type {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--accent-gold);
+    text-align: center;
+    margin-top: 3rem;
+    font-style: italic;
+    position: relative;
+}
+
+.about p:last-of-type::before {
+    content: '"';
+    font-size: 4rem;
+    color: var(--accent-gold-light);
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.3;
+    font-family: serif;
+}
+
+.about p:last-of-type::after {
+    content: '"';
+    font-size: 4rem;
+    color: var(--accent-gold-light);
+    position: absolute;
+    bottom: -2rem;
+    right: 50%;
+    transform: translateX(50%);
+    opacity: 0.3;
+    font-family: serif;
+}
+
+/* Professional Section Divider */
+.about::after {
+    content: '';
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6rem;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, var(--accent-gold) 50%, transparent 100%);
+    border-radius: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        margin: 2rem 1rem;
+        padding: 3rem 1.5rem;
+    }
+    
+    .about h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .about p {
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    .about p:first-of-type {
+        font-size: 1.1rem;
+    }
+    
+    .about p:last-of-type {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        margin: 1rem;
+        padding: 2rem 1rem;
+    }
+    
+    .about h2 {
+        font-size: 2rem;
+    }
+    
+    .about p {
+        font-size: 0.95rem;
+    }
+}
